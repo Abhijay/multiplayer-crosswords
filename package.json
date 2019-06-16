@@ -1,0 +1,27 @@
+{
+  "name": "crosswords",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Abhijay Bhatnagar",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "Crosswords",
+    "Multiplayer"
+  ],
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.1.2",
+    "handlebars-helpers": "^0.10.0",
+    "socket.io": "^2.2.0"
+  }
+}

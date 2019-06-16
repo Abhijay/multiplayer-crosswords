@@ -1,0 +1,1 @@
+https://cdn1.amuselabs.com/wapo/crossword?id=tca{DAY}&set=wapo-daily&embed=1&compact=1&picker=wp-picker&heightReduction=60
