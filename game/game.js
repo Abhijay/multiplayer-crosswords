@@ -13,7 +13,6 @@ class Game {
 
         if (this.grid != newGrid) {
             this.grid = newGrid
-            console.log('puzzle changed')
         }
     }
 

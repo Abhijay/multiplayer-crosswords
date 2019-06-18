@@ -16,7 +16,7 @@ var handlebars = require('handlebars');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', '.hbs');
-app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }));
+app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs'}));
 app.use('/static', express.static(publicPath));
 app.locals.basedir = path.join(__dirname, 'views');
 
@@ -26,6 +26,10 @@ var sockets = {}
 var games = {}
 var connections = require('./api/connections')(io, sockets, games)
 io.on('connection', connections);
+
+// Page injection
+var iframeReplacement = require('node-iframe-replacement');
+app.use(iframeReplacement);
 
 // Register routes and Initializing
 var routes = require('./api/routes')(games);
