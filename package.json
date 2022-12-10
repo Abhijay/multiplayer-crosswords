@@ -18,7 +18,7 @@
     "request": "^2.88.0"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "handlebars": "^4.1.2",
     "handlebars-helpers": "^0.10.0",
